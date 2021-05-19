@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <title>Visit Nepal 2022</title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+            <div class="logo">Visit Nepal 2022</div>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="updates.html"> Updates</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </ul>
+        <div class="rightNav v-class">
+            <input type="text" name="search" id="search">
+            <button class="btn-sm">Search</button> 
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+
+        </div>
+    </nav>
+    <section class="firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big"> Travel Nepal in a Style</p>
+                <p class="text-small">
+                    A trekkers' paradise, Nepal combines Himalayan views, golden temples,
+                     charming hill villages and jungle wildlife watching to offer one of 
+                     the world's great travel destinations.
+                 </p>
+                 <br>
+                 <p class="text-small">
+                    The Nepal Himalaya is the ultimate goal for mountain lovers. Some of the Himalaya’s most iconic and 
+                    accessible hiking is on offer here, with rugged trails to Everest,
+                     the Annapurnas and beyond. Nowhere else can you trek for days in incredible mountain scenery,
+                      secure in the knowledge that a hot meal, cosy lodge and warm slice of apple pie await you at the end of the day.
+                      Then there's the adrenaline kick of rafting a roaring Nepali river or bungee jumping into a yawning Himalayan gorge
+                      . Canyoning, climbing, kayaking, paragliding and mountain biking all offer a rush against the backdrop of some of the world’s most dramatic landscapes
+                 </p>
+                 <br>
+                 <br>
+                 <div class="buttons">
+                     <button class="btn" onclick="booktrip()">Book Trips</button>
+                     <br>
+                     <br>
+                     
+
+
+                 </div>
+
+
+
+            </div>
+            <div class="secondHalf">
+               
+                <img src="images/stupas.jpg" alt="Stupas">
+                
+
+
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <script src="/button.js"></script>
+    <section class="contact" style="background-color: rgb(249, 249, 250);">
+        
+        <br>
+        <h2 style="text-align: center;">Contact Us</h2>
+        <a name ="contact"></a>
+        <div class="form" style="max-width: 565px;margin: auto;">
+            <form>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <button class="btn" onclick="validate()">Submit</button>
+
+            </form>
+            
+
+
+        </div>
+
+        
+    </section>
+    <footer class="small-text" style="text-align: center; margin-top:auto; background-color: rgb(173, 171, 171);background-size: cover;">
+        Copyright &copy; 2027 - All rights reserved
+    </footer>
+    
+    <script src="/responsive.js"></script>
+</body>
+</html>
