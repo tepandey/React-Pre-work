@@ -1,0 +1,19 @@
+Read Me: 
+Technical Ascept of the website.
+
+Technical requirements:
+
+HTML
+
+Have at least 3 pages, keep the grid system consistent as much as possible : 
+	I have used HTM and CSS flex to setup a consistent grid system. I created a Nav section for my navigation bar and divided first and section half for the section. I have divided everything to it on classes, so it is easier to target
+Use at least 10 different HTML tags
+Use HTML tables: I used tables for form and Popular destitaion
+Implement at least two uses for forms
+Drop-down menu : Drop down menu work for the top left of the website
+Use web fonts: I have imported text from the website 
+Use different types of content in the form of text, images, videos, and GIFs (at least 2 different types): I am using images
+Use regex validation: Used regex for email validation
+CSS: used a different CSS file to style my sheet
+
+Javascript: I used JavaScript to make the site more responsive and used event handler to hide the list section when minimze the window for phone and tablet.

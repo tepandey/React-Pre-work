@@ -33,6 +33,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
+    padding-top: 0px;
 
 }
 
@@ -45,8 +47,9 @@
 
 .nav-list li a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     color:rgb(241, 188, 11);
+    margin: 20px;
 
 }
 .nav-list li a:hover{
@@ -81,7 +84,7 @@
     font-family: 'Hind Siliguri', sans-serif;
     max-width: 85%;
     margin: auto;
-    height: 60%;
+    height: 50%;
     
 }
 .firstSection{
@@ -90,22 +93,26 @@
     background-color:rgb(251, 254, 255);
 }
 .firstHalf{
-    width: 35%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 50px;
     
 
 }
 .secondHalf{
-    width: 70%;
+  
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    height: 100%;
 
 }
 .secondHalf img{
-    width: 90%;
+    width: 100%;
 
     padding: 2px;
     border: 2px solid white;
@@ -207,6 +214,51 @@
     .secondHalf{
         width: 80%;
     }
+    
 }
-
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  .dropbtn {
+    background-color:transparent;
+    color:rgb(241, 188, 11);
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    font:inherit;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font:inherit;
+    color:rgb(241, 188, 11);
+    font-size: 30px;
+    padding: 2px 2px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd; color:green;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #ddd; color:green;}
 

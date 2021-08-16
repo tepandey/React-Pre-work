@@ -12,7 +12,17 @@
 <body>
     <nav class="navbar background h-nav">
         <ul class="nav-list v-class">
-            <div class="logo">COVID-19 Travel Updates</div>
+      
+            <div class="logo">
+                <div class="dropdown">
+                    <button class="dropbtn">Travel Updates</button>
+                    <div class="dropdown-content v-class">
+                        <a href="index.html"> Home</a>
+                        <a href="about.html"> About</a>
+                        <a href="updates.html"> Updates</a>
+                    </div>
+                  </div>
+            </div>
             <li><a href="index.html"> Home</a></li>
             <li><a href="about.html"> About</a></li>
             <li><a href="updates.html"> Updates</a></li>
@@ -38,8 +48,6 @@
                     Evacuation is being arranged for tourists to Kathmandu from different parts of Nepal. 
                     Please refer to the update from NTB and other documents regarding Evacuation for Tourists under the current circumstances.
                     <br>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDzAnvf4luL1mh5QUF7GHKT-9I3-16Sr1YirDb4Kx6nuNQbg/viewform"target="_blank">Rescue Permission Form</a>
-                    
                 </p>
                  <br>
                  <br>
@@ -56,41 +64,57 @@
 
             </div>
             <div class="secondHalf">
-               
-                <img src="images/scene.jpg" alt="Scenic">
+                <p class="text-big"> Rescue Form</p>
+                <form name="RegForm" action="/submit.php" 
+                    onsubmit="return form2validate()" method="post">
+                        <p><input type="text" size="65" name="Name" placeholder="Name"/></p>
+                        
+                        <p><input type="text" size="65" name="Address" placeholder="Address" /></p>
+                        
+                        <p><input type="text" size="65" name="EMail" placeholder="Email Address" /></p>
+                        
+                        <p><input type="text" size="65" name="Telephone" placeholder="Phone Number" /></p>
+                       
                 
+                        <p class="text-small">
+                            SELECT YOUR PROVINCNE
+                            <select type="text" value="" name="Subject">
+                                <option> Select</option>
+                                <option> Province 1</option>
+                                <option> Province 2</option>
+                                <option> Province 3</option>
+                                <option> Province 4</option>
+                                <option> Province 5</option>
+                                <option> Province 6</option>
+                                <option> Province 7</option>
+                            </select>
+                        </p>
+                        <br />
+                        <p>Comments: <textarea cols="55" 
+                                            name="Comment"> </textarea></p>
+                        <p>
+                            <input type="submit" 
+                                value="send" name="Submit" />
+                            <input type="reset" 
+                                value="Reset" name="Reset" />
+                        </p>
+                    </form>
+                                
+                                
 
 
+                           
             </div>
-        </div>
 
-    </section>
-    <hr>
-    <section class="contact" style="background-color: rgb(249, 249, 250);">
-        
-        <br>
-        <h2 style="text-align: center;">Contact Us</h2>
-        <a name ="contact"></a>
-        <div class="form" style="max-width: 565px;margin: auto;">
-            <form>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                <input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
-                <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                <button class="btn" onclick="validate()">Submit</button>
-
-            </form>
-            
-
-
-        </div>
-
-        
-    </section>
+        </section>
+                   
+                    
     
     <footer class="small-text" style="text-align: center; margin-top:auto; background-color: rgb(173, 171, 171);background-size: cover;">
         Copyright &copy; 2027 - All rights reserved
     </footer>
-    <script src="/button.js"></script>
+    <script src="/update.js"></script>
+   
     <script src="/responsive.js"></script>
 </body>
 </html>
